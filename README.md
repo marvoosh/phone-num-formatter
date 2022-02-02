@@ -4,7 +4,7 @@
 
 ## Using the module
 
-The module call is `Formatter::PhoneNumber::UK.format('Your number here as string')`.
+The module call is `Formatter::PhoneNumber::UK.format('Your number here as string')`.\n
 For example `Formatter::PhoneNumber::UK.format('071234 56789')`
 The module will return the formatted phone number as a string.
 
@@ -20,8 +20,8 @@ The module will raise an error if:
 First thing I did is research.
 I started with finding out more on how to use modules and raise errors.
 
-Next I coded the actual format method tryung to keep is simple and the code DRY.
-I wrote the regex first to make sure it will match all possiblities given and added more of my own).
+Next I coded the actual format method trying to keep it simple and the code DRY.
+I wrote the regex first to make sure it will match all possiblities given and added more of my own.
 After getting rid of any whitspaces I used a case control flow to impliment the format requested.
 
 After that I started implimenting errors starting with the macro (e.g. StandardError) and working down to the more specific error cases (e.g. InvalidPrefix).
