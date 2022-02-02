@@ -36,9 +36,3 @@ module Formatter
     end
   end
 end
-
-
-# Formatter::PhoneNumber::UK.format('0634343')
-# Formatter::PhoneNumber::UK.format('071234 5678')
-# Formatter::PhoneNumber::UK.format('44 41 23 456 789')
-# # Formatter::PhoneNumber::UK.format('+44 71 23 456 789')
