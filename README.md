@@ -1,4 +1,4 @@
-# Phone Number Formatter - UK
+# 📞 Phone Number Formatter - UK 📞
 
 ### A module that takes an input of a UK phone number and returns it in one specific format of +447 followed by 9 digits. The module is able to handle invalid inputs.
 
@@ -25,6 +25,7 @@ I wrote the regex first to make sure it will match all possiblities given and ad
 
 After that I implimented the errors classes, starting with the most general error (e.g. InvalidPhoneNumber) and working down to the more specific error cases (e.g. InvalidPrefix).
 The errors are raised in that order so only if it is not cought by the more spesific case it will then be cought by the less specific one.
+
 InvalidPrefix > InvalidNumberLength(including number 7 after prefix) > InvalidPhoneNumber.
 
 Finally I attempted writing some tests for the project.
