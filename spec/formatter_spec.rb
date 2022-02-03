@@ -1,6 +1,14 @@
 require_relative '../formatter'
 
 RSpec.describe Formatter::PhoneNumber::UK do
+  it 'raises an error if number is not correct length for UK numbers' do
+    expect { Formatter::PhoneNumber::UK.format('0712345678') }.to raise_error(Formatter::PhoneNumber::UK::InvalidNumberLength)
+  end
+
+  it 'raises an error if prefix is incorrect for UK numbers' do
+    expect { Formatter::PhoneNumber::UK.format('27123456789') }.to raise_error(Formatter::PhoneNumber::UK::InvalidPrefix)
+  end
+
   it 'raises an error if number input is not in valid UK format' do
     expect { raise '071234 5678' }.to raise_error(StandardError)
   end
