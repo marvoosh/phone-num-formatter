@@ -19,7 +19,7 @@ module Formatter
       end
 
       def self.format(number)
-        regex = /(?<prefix>\+?(44|0))7(?<number>\d{9})/
+        regex = /\+?(44|0)7(?<number>\d{9})/
         clean_number = number.gsub(/\s+/, '')
 
         raise InvalidPrefix unless clean_number.start_with?(/\+?(44|0)/)
